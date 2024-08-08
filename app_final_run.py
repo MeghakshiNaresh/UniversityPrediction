@@ -6,6 +6,7 @@ import pickle
 clf = pickle.load(open("case_study_university_v1.pkl","rb"))
 
 def predict(data):
+     clf = pickle.load(open("case_study_university_v1.pkl","rb"))
      return clf.predict(data)
 
 st.title("Case Study On University Admission Prediction")
