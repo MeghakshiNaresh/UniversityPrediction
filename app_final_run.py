@@ -24,8 +24,8 @@ with col1:
     R= st.sidebar.slider("Research", 1.0, 10000.0, 0.5)
                           
 st.text('')
-if st.button("Sales Prediction"):
-    result= clf.predict(np.array([[G,T,U,S,L,C,R]]))
+if st.button("Seles Prediction "):
+    result = clf.predict(np.array([[G,T,U,S,L,C,R]]))
     st.text(result[0])
     
 st.markdown("Developed  at mala and meghakshi")
