@@ -16,13 +16,13 @@ st.header("Chances for getting Admissiom")
 col1,col2 = st.columns(2)
 
 with col1:
-    G= st.slider("GRE Score", 1.0, 10000.0, 0.5)
-    T= st.slider("TOEFL Score", 1.0, 10000.0, 0.5)
-    U= st.slider("University Rating", 1.0, 10000.0, 0.5)
-    S= st.slider("SOP", 1.0, 10000.0, 0.5)
-    L= st.slider("LOR", 1.0, 10000.0, 0.5)
-    C= st.slider("CGPA", 1.0, 10000.0, 0.5)
-    R= st.slider("Research", 1.0, 10000.0, 0.5)
+    G= st.slider("GRE Score", 1.0, 350.0, 0.5)
+    T= st.slider("TOEFL Score", 1.0, 120.0, 0.5)
+    U= st.slider("University Rating", 1.0, 5, 1)
+    S= st.slider("SOP", 1.0, 5.0, 1)
+    L= st.slider("LOR", 1.0, 5.0, 1)
+    C= st.slider("CGPA", 1.0, 10.0, 0.5)
+    R= st.slider("Research", 1.0, 5.0, 0.5)
                           
 st.text('')
 if st.button("Predict Total Sales Price on Media "):
