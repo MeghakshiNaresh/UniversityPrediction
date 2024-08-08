@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
+import joblib
 
-clf = pickle.load(open("case_study_university_v1.pkl","rb"))
+clf = joblib.load(open("case_study_university_v1.pkl","rb"))
 
 def predict(data):
      return clf.predict(data)
